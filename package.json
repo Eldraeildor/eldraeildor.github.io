@@ -7,7 +7,6 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxt/content": "^1.0.0",
@@ -21,6 +20,5 @@
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.12.3",
-    "push-dir": "^0.4.1"
   }
 }
