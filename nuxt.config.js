@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - EllenaF',
-    title: 'Ellena\'s Zone (WIP)',
+    titleTemplate: '%s - Ellena\'s stash of stuff',
+    title: 'Ellena\'s stash of stuff',
     htmlAttrs: {
       lang: 'en'
     },

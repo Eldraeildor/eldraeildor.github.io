@@ -36,6 +36,7 @@
 			>
 				<v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
 			</v-btn>
+			<img width="40px" height="40px" src="~/assets/img/avatar.png" style="margin: 0 10px;"/>
 			<v-toolbar-title>{{ title }}</v-toolbar-title>
 		</v-app-bar>
 		<v-main>
@@ -78,7 +79,7 @@ export default {
 				}
 			],
 			miniVariant: false,
-			title: 'EllenaF - Personal Website'
+			title: 'Ellena\'s stash of stuff'
 		}
 	}
 }
