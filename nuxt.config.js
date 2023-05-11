@@ -6,8 +6,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - eldraeildor.github.io',
-    title: 'eldraeildor.github.io',
+    titleTemplate: '%s',
+    title: 'Ellena\'s Zone (WIP)',
     htmlAttrs: {
       lang: 'en'
     },
