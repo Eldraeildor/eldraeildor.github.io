@@ -1,24 +1,30 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
-      <v-card>
+      <v-card outlined>
         <v-card-title class="headline">
-          Hey, is this a work in progress website ?!
+          Welcome to Ellena's stash of stuff !
         </v-card-title>
         <v-card-text>
-          <p>It sure is, i only just managed to setup Github pages to generate and deploy the application automatically, i think it should work now.</p>
-          <p>Now i should be able to see changes when i push stuff on the repo, wish me luck !</p>
+          <p>In this website you'll find some information about the projects i'm currently working on as well as ressources and tutorials, mostly about VRChat, Unity, or Blender.</p>
+          <p>While there isn't a lot of content yet, I plan on updating this website and improving the navigation and contents of it.</p>
+          <p>
+            This website is made using the following technologies and frameworks :
+            <ul>
+              <li><a href="https://nuxtjs.org/">NuxtJS</a> and the <code>content</code> module as the framework</li>
+              <li><a href="https://pages.github.com/">GitHub Pages</a> for hosting the static website (generated from the website's repository on GitHub)</li>
+            </ul>
+          </p>
+          <p>
+            Feel free to check out the contents of the website, i hope you'll find something of interest in here !
+          </p>
+          <v-btn to="vrchat" color="primary">
+              Projects
+            </v-btn>
+            <v-btn to="tutorials" color="primary">
+              Tutorials
+            </v-btn>
         </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
       </v-card>
     </v-col>
   </v-row>
@@ -26,6 +32,9 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  head: {
+    title: 'Homepage'
+  }
 }
 </script>
