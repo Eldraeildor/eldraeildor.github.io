@@ -1,0 +1,62 @@
+<template>
+	<v-row justify="center">
+			<!-- <v-img max-height="200" src="/patterns/pattern.webp">
+
+			</v-img> -->
+		<v-col cols="12" sm="12">
+			<title-card title="Guides and tutorials" subtitle="This section of the site will host all of the guides and tutorials, click on the cards below to access them !"></title-card>
+			<v-card outlined>
+				<v-divider></v-divider>
+				<v-card-text>
+					<p>Use the dropdown below to filter the guides :</p>
+					<v-select outlined hide-details
+            v-model="value"
+            :items="items"
+						item-text="title"
+						item-value="value"
+            chips
+            label="Categories"
+            multiple
+          ></v-select>
+				</v-card-text>
+			</v-card>
+		</v-col>
+		<v-col cols="12" sm="12">
+			<v-card outlined>
+				<v-card-text>
+				</v-card-text>
+			</v-card>
+		</v-col>
+	</v-row>
+</template>
+	
+<script>
+	export default {
+		name: 'TutorialsIndexPage',
+		head: {
+			title: 'Guides'
+		},
+		data: () => ({
+      items: [
+				{
+					title: 'VRChat World Building',
+					value: 'vrc-worlds'
+				},
+				{
+					title: 'VRChat Avatar Setup',
+					value: 'vrc-avatars'
+				},
+				{
+					title: '3D Modeling',
+					value: '3d'
+				},
+				{
+					title: 'Shaders',
+					value: 'shaders'
+				}
+			],
+      value: ['vrc-worlds', 'vrc-avatars', '3d', 'shaders'],
+    }),
+	}
+</script>
+	

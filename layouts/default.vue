@@ -7,13 +7,14 @@
 			fixed
 			app
 		>
-			<v-list>
+			<v-list nav>
 				<v-list-item
 					v-for="(item, i) in items"
+					color="purple lighten-2"
 					:key="i"
 					:to="item.to"
 					router
-					exact
+					dense
 					:disabled="item.dis"
 				>
 					<v-list-item-action>
@@ -21,11 +22,13 @@
 					</v-list-item-action>
 					<v-list-item-content>
 						<v-list-item-title>{{ item.title }}</v-list-item-title>
+						<v-list-item-subtitle>{{ item.subtitle }}</v-list-item-subtitle>
 					</v-list-item-content>
 				</v-list-item>
 			</v-list>
 		</v-navigation-drawer>
 		<v-app-bar
+			outlined
 			clipped-left
 			fixed
 			app
@@ -36,10 +39,12 @@
 			>
 				<v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
 			</v-btn>
-			<img width="40px" height="40px" src="~/assets/img/avatar.png" style="margin: 0 10px;"/>
+			<v-avatar :size="40" style="margin-right: 10px;">
+				<img src="~/assets/img/avatar.png" style="margin: 0 10px;"/>
+			</v-avatar>
 			<v-toolbar-title>{{ title }}</v-toolbar-title>
 		</v-app-bar>
-		<v-main>
+		<v-main style="background-image: url(/pattern.webp); background-repeat: repeat;">
 			<v-container>
 				<Nuxt />
 			</v-container>
@@ -63,20 +68,36 @@ export default {
 				{
 					icon: 'mdi-home-variant',
 					title: 'Homepage',
+					subtitle: '༼ つ ◕_◕ ༽つ',
 					to: '/',
-				},
-				{
-					icon: 'mdi-virtual-reality',
-					title: 'VRChat stuff (WIP)',
-					to: '/vrchat',
-					dis: true
+					dis: false
 				},
 				{
 					icon: 'mdi-file-document-multiple',
-					title: 'Tutorials (WIP)',
-					to: '/tutorials',
-					dis: true
-				}
+					title: 'Guides',
+					subtitle: '(╯‵□′)╯︵┻━┻',
+					to: '/guides',
+					dis: false
+				},
+				{
+					icon: 'mdi-virtual-reality',
+					title: 'VRChat Projects',
+					subtitle: '=￣ω￣=',
+					to: '/vrchat',
+					dis: false
+				},
+				{
+					icon: 'mdi-blender-software',
+					title: '3D Models',
+					subtitle: '(ヘ･_･)ヘ┳━┳',
+					to: '/models'
+				},
+				{
+					icon: 'mdi-headphones',
+					title: 'Music recommendations',
+					subtitle: '┌( ಠ_ಠ)┘ ㄟ(≧◇≦)ㄏ',
+					to: '/music'
+				},
 			],
 			miniVariant: false,
 			title: 'Ellena\'s stash of stuff'
