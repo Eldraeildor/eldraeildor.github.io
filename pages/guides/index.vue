@@ -24,6 +24,11 @@
 		<v-col cols="12" sm="12">
 			<v-card outlined>
 				<v-card-text>
+					<v-card v-for="guide in guides" :key="guide.path">
+						<v-card-title>{{ guide.title }}</v-card-title>
+						<v-card-subtitle>{{ guide.description }}</v-card-subtitle>
+						<v-btn :to="guide.path">{{ guide.path }}</v-btn>
+					</v-card>
 				</v-card-text>
 			</v-card>
 		</v-col>
@@ -31,6 +36,7 @@
 </template>
 	
 <script>
+
 	export default {
 		name: 'TutorialsIndexPage',
 		head: {
@@ -57,6 +63,11 @@
 			],
       value: ['vrc-worlds', 'vrc-avatars', '3d', 'shaders'],
     }),
+
+		async asyncData({ $content }) {
+      const guides = await $content('guides').fetch()
+      return { guides }
+    }
 	}
 </script>
 	

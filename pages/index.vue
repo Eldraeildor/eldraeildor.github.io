@@ -20,7 +20,7 @@
 					</p>
 					<v-btn to="guides" color="primary">Guides</v-btn>
 					<v-btn to="vrchat" color="primary">Projects</v-btn>
-					<v-btn to="guides" color="primary">3D Assets</v-btn>
+					<v-btn to="models" color="primary">3D Assets</v-btn>
 				</v-card-text>
 			</v-card>
 		</v-col>
