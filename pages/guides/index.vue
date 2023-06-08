@@ -4,7 +4,12 @@
 
 			</v-img> -->
 		<v-col cols="12" sm="12">
-			<title-card title="Guides and tutorials" subtitle="This section of the site will host all of the guides and tutorials, click on the cards below to access them !"></title-card>
+			<title-card
+				title="Guides and tutorials"
+				subtitle="This section of the site will host all of the guides and tutorials, click on the cards below to access them !"
+				src="/patterns/header.png"
+			>
+			</title-card>
 			<v-card outlined>
 				<v-divider></v-divider>
 				<v-card-text>
@@ -59,9 +64,13 @@
 				{
 					title: 'Shaders',
 					value: 'shaders'
+				},
+				{
+					title: 'SteamVR Addons',
+					value: 'steamvr'
 				}
 			],
-      value: ['vrc-worlds', 'vrc-avatars', '3d', 'shaders'],
+      value: ['vrc-worlds', 'vrc-avatars', '3d', 'shaders', 'steamvr'],
     }),
 
 		async asyncData({ $content }) {
@@ -70,4 +79,3 @@
     }
 	}
 </script>
-	
