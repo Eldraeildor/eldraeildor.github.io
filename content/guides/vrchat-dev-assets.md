@@ -23,8 +23,6 @@ Some of the items linked on this page link to paid assets, others are free, but 
 
 ## Tools
 
----
-
 ### World Development
 - Depth Buffer Toolkit : [GitHub](https://github.com/Varneon/VUdon-DepthBufferToolkit)
 - VR World Toolkit : [GitHub](https://github.com/oneVR/VRWorldToolkit)
@@ -36,6 +34,7 @@ Some of the items linked on this page link to paid assets, others are free, but 
 ### Blender Addons
 - CATS Blender Plugin : [GitHub](https://github.com/absolute-quantum/cats-blender-plugin)
 
+---
 
 ## Shaders
 
