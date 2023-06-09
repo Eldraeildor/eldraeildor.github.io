@@ -14,6 +14,7 @@
 				<v-divider></v-divider>
 				<v-card-text>
 					<p>Use the dropdown below to filter the guides :</p>
+					<code style="color: red;">not implemented yet é_è</code>
 					<v-select outlined hide-details
             v-model="value"
             :items="items"
